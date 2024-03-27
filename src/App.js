@@ -1,4 +1,3 @@
-import Layout from "./components/Layout";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Profile from "./pages/Profile";
@@ -9,12 +8,10 @@ const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout></Layout>}>
-          <Route index element={<Login></Login>}></Route>
-          <Route path="/signup" element={<Signup></Signup>} ></Route>
-          <Route path="/profile" element={<Profile></Profile>}></Route>
-          <Route path="/stats" element={<Stats></Stats>} ></Route>
-        </Route>
+        <Route index element={<Login></Login>}></Route>
+        <Route path="/signup" element={<Signup></Signup>} ></Route>
+        <Route path="/profile" element={<Profile></Profile>}></Route>
+        <Route path="/stats" element={<Stats></Stats>} ></Route>
       </Routes>
     </BrowserRouter>
   )

@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { auth } from "../Firebase/firebase";
 import { signOut } from "firebase/auth";
+import Header from "../components/Header";
 
 const Profile = () => {
     const navigate = useNavigate();
@@ -18,6 +19,7 @@ const Profile = () => {
 
     return (
         <div className="" >
+            <Header />
             <div className="" >
                 <div className="">
                     <p>Welcome <em className="">{user.email}</em>. You are logged in !</p >
